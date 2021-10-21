@@ -1,9 +1,18 @@
 
 import './App.css';
-
+import CadastroPage from './pages/CadastroPage'
+import WelcomeCard from './components/WelcomeCard';
 export default function App() {
   return (
-    <h1>Hello world!</h1>
+    <div className="screenRegister"> 
+      <WelcomeCard 
+        title='Hey! Welcome.'
+        message='Sign up now and start using our plataform!'/>
+        <CadastroPage/>
+       
+      </div>
+   
+    
   );
 }
 
