@@ -1,9 +1,14 @@
 
 import './App.css';
+import CadastroPage from './pages/CadastroPage'
+
 
 export default function App() {
   return (
-    <h1>Hello world!</h1>
+    <div> 
+      <CadastroPage />
+       
+    </div> 
   );
 }
 
