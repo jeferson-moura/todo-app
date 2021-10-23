@@ -1,16 +1,13 @@
 import React from 'react';
+import WelcomeCard from '../components/WelcomeCard';
+import CadastroForm from '../components/CadastroForm';
 
-export default function CadastroPage(){
-    return(
-    <main className='registerUser'>
-        
-        <h1>Create your account now!</h1>
-        <span>Enter your datails for register:</span>
-        <input type='text' placeholder='Name'></input>
-        <input type='mail'  placeholder='Mail'></input>
-        <input type='password'  placeholder='Password'></input>
-        <button>SINGN UP</button>
-        <span>Already have an account? Click <a href='#'>here</a> to login.</span>
-    </main>
+
+export default function CadastroPage() {
+    return (
+        <main className='cadastraPageContainer'>
+            <WelcomeCard title="Hey! Welcome" message="Sign up now and start using our platform!"/>
+            <CadastroForm />
+        </main>
     )
 }

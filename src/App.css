@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+body{
+    font-family: Sora,sans-serif;
+}
 .screenRegister{
     display: flex;
 }
@@ -11,26 +14,39 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     color: #ffff;
-    height:41rem;
-    width: 36rem;
-  
+    height: 100vh;
+    width: 454px;
 }
+
 .WelcomeMessage h1{
+    font-size: 48px;
     font-style: normal;
     font-weight: bold;
 }
+.WelcomeMessage span{
+    font-size: 24px;
+    font-weight: 200;
+}
 
 
-.registerUser{
+.cadastraPageContainer{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cadastroFormContainer {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    justify-content: center;
+    width: 898px;
+    height: 100vh;
 }
-.registerUser button{
+
+.confirmButton{/*BUTTON*/
     width: 14rem;
     height: 3.25rem;
     margin-top: 1rem;
@@ -38,9 +54,11 @@
     border-radius: 3.1rem;
     border:none;
     color: #ffff;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-.registerUser input{
+.inputText{ /*INPUT*/
 outline: none;   
  width: 60vh;
  height: 7vh;
@@ -51,20 +69,30 @@ outline: none;
  border-radius:4px;
  border: none;
  background-color: #e5e5e5e5;
- padding-left: 7px;
+ padding-left: 12px;
+ font-family: Sora,sans-serif;
+ font-size: 14px;
+ color: #8E8E8E;
+ font-weight: 300;
 }
-input:focus{
-    border: 1px solid #0094FF;
+.inputText:focus{
+    border: 1.5px  solid #0094FF;
 }
 
-.registerUser h1{
+.cadastroFormContainer h1{
     color: #0094FF;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
     font-size:2rem;
     font-style: normal;
     font-weight: bold;
 }
-.registerUser span{color: #A4A4A4;}
+.cadastroFormContainer span{
+    color: #9b9898;
+    margin-top: 1rem;
+    font-size: 1.03rem;
+    font-weight: 200;
+}
+
 a{  
     text-decoration: none;
     color:#0094FF;
